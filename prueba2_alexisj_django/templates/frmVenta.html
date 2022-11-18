@@ -8,19 +8,19 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <title>Formulario Venta</title>
+    <title>Venta Articulo</title>
 </head>
 <body>
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">name</a>
+            <a class="navbar-brand" href="/">Name</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
               </ul>
               <div class="navbar-nav ">
                 <a class="nav-link" href="/verProductos">Ver Productos</a>
@@ -30,10 +30,7 @@
               </div>  
             </div>
           </nav>
-          <div class="container"><br>
-            <div class="text-center">
-            <h1 class="">Producto Comprar</h1>
-            </div>
+          <div class="container">
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -60,8 +57,8 @@
                 {% csrf_token %}
                 <div class="m-10 row justify-content-center">
                     <div class="form-floating mx-auto text-center p-2">
-                        <text class="p-2 mx-auto">Cantidad</text>
-                        <input type="text" class="form-control mx-auto p-2" placeholder="Ingrese la cantidad a comprar" name="cantidad">
+                        <text class="p-2 mx-auto">Ingrese la cantidad que desea</text>
+                        <input type="text" class="form-control mx-auto p-2 text-center" placeholder="Ejemplo: 2" name="cantidad">
                     </div>
                 </div><br>
                 <div class="m-10 row justify-content-center">
